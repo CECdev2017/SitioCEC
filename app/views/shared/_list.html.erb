@@ -1,0 +1,22 @@
+<section class="products-grid">
+				<div class="container">
+					<div class="row products-container">
+					<% @cursos.each do |curso| %>
+					<% if curso.id <= 9 %>
+						<div class="col-md-4 col-sm-6 col-xs-12 product">
+							<div class="thumbnail" style="background-image: url('/assets/products/<%= curso.image_file_name %>');">
+								<div class="product-details text-center">
+									<div class="align-vertical">
+										<h3><%= curso.titulo %></h3>
+										
+										<a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Inscribirse</a>
+										<p class="product-price"><%= number_to_currency curso.precio %></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					 <% end %>
+					 <% end %>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</section>

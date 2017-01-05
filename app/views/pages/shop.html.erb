@@ -1,0 +1,64 @@
+<header class="secondary">
+				<div class="background-image-holder parallax-background overlay" data-stellar-background-ratio="0.9">
+					<%= image_tag('bg-5.jpg', class: 'background-image', alt:'Background') %>
+					<!--<img class="background-image" alt="Background Image" src="images/1600x900.png">-->
+				</div>
+
+				<div class="container align-vertical hero">
+					<div class="row">
+						<div class="col-md-5 text-left">
+							<h1>Cursos en catalogo</h1>
+							<p>Excel Aplicado a las Finanzas, Elaboración y Manejo de Nómina, Análisis Financiero, Liderazgo, Comunicación Efectiva y Trabajo en Equipo, Control Presupuestario</p>
+						</div>
+					</div><!--end of row-->
+				</div><!--end of container-->
+			</header>
+
+
+
+		<section class="product-list">
+				<div class="container">
+
+				<% @cursos.each do |curso| %>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="product">
+								<div class="row">
+									<div class="col-md-6 col-xs-12">
+										<div class="thumbnail">
+										<%= image_tag curso.image %>
+											
+										</div>
+									</div>
+									<div class="col-md-5 col-md-offset-1">
+										<div class="product-details">
+											<h2 class="product-title"><%= curso.titulo %></h2>
+											<p class="product-price"><%= number_to_currency curso.precio %></p>
+											<p>
+
+											<%= curso.descripccion %>
+												
+
+											</p>
+
+											<a href="#" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Incribirse</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div><!-- /.row -->
+					<% end %>
+				</div>
+		</section>
+
+
+			<div class="no-padding-top section">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<a href="catalog.html" class="load-more"><i class="fa fa-ellipsis-h"></i></a>
+						</div>
+					</div><!-- /.row -->
+				</div><!-- /.container -->
+			</div>
