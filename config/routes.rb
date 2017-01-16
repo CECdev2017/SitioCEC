@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   root 'pages#index'
   get 'shop' => 'pages#shop'
 
+  resources :registros
+  resources :curso_items
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
