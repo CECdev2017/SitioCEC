@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170105224643) do
+ActiveRecord::Schema.define(version: 20170117161415) do
 
   create_table "active_admin_comments", force: :cascade do |t|
     t.string   "namespace"
@@ -52,9 +52,11 @@ ActiveRecord::Schema.define(version: 20170105224643) do
     t.datetime "created_at",              null: false
     t.datetime "updated_at",              null: false
     t.integer  "quantity",    default: 1
+    t.integer  "order_id"
   end
 
   add_index "curso_items", ["curso_id"], name: "index_curso_items_on_curso_id"
+  add_index "curso_items", ["order_id"], name: "index_curso_items_on_order_id"
   add_index "curso_items", ["registro_id"], name: "index_curso_items_on_registro_id"
 
   create_table "cursos", force: :cascade do |t|
@@ -70,6 +72,17 @@ ActiveRecord::Schema.define(version: 20170105224643) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+  end
+
+  create_table "orders", force: :cascade do |t|
+    t.string   "name"
+    t.string   "email"
+    t.text     "address"
+    t.string   "city"
+    t.string   "country"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string   "telefono"
   end
 
   create_table "registros", force: :cascade do |t|

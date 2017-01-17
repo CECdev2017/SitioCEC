@@ -21,14 +21,17 @@
 
 <section class="product-list">
 <div class="container">
+<div class="col-md-12">
 <h1>Su registro</h1>
-	<div class="col-md-12">
+	
 	
 		<br>
 		<%= render 'registros/registro' %>
 		<br>
-		<h2>Detalle de Inscripccion</h2>
+		<h2>Detalle de Inscripccion </h2>
 		<h5>Total: <%= number_to_currency @registro.total_precio %></h5>
+		<br>
+		<%= button_to 'Registrar', new_order_path, method: :get %>
 		<br>
 			<%= link_to 'Volver', shop_path %>
 		<br>
