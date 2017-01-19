@@ -16,7 +16,7 @@ development:
   adapter: postgresql
   database: dd7fk865hucnub
   pool: 5
-   username: jtdqtbuqhxjvdb
+  username: jtdqtbuqhxjvdb
   password: f2149fca105a9bf0d9c9a46129506765145952a52f7fc213c09139d74bcb9e2d
   timeout: 5000
 
