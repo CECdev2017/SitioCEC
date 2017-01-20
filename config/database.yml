@@ -6,19 +6,17 @@
 #
 default: &default
   adapter: postgresql
-  database: dd7fk865hucnub
   pool: 5
-  username: jtdqtbuqhxjvdb
-  password: f2149fca105a9bf0d9c9a46129506765145952a52f7fc213c09139d74bcb9e2d
   timeout: 5000
 
 development:
   adapter: postgresql
   database: dd7fk865hucnub
-  pool: 5
-  username: jtdqtbuqhxjvdb
+  user: jtdqtbuqhxjvdb
   password: f2149fca105a9bf0d9c9a46129506765145952a52f7fc213c09139d74bcb9e2d
+  pool: 5
   timeout: 5000
+
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -26,15 +24,15 @@ development:
 test:
   adapter: postgresql
   database: dd7fk865hucnub
-  pool: 5
-  username: jtdqtbuqhxjvdb
+  user: jtdqtbuqhxjvdb
   password: f2149fca105a9bf0d9c9a46129506765145952a52f7fc213c09139d74bcb9e2d
+  pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
   database: dd7fk865hucnub
-  username: jtdqtbuqhxjvdb
-  password: f2149fca105a9bf0d9c9a46129506765145952a52f7fc213c09139d74bcb9e2d
+  user: jtdqtbuqhxjvdb
+  password: f2149fca105a9bf0d9c9a46129506765145952a52f7fc213c09139d74bcb9e2d 
+  pool: 5
   timeout: 5000
-
