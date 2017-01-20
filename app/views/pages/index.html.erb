@@ -53,6 +53,7 @@
 					<% if curso.id == 1 %>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
 							<div class="thumbnail" style="background-image: url('/assets/products/<%= curso.image_file_name %>');">
+							<%= image_tag curso.image %>
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3><%= curso.titulo %></h3>
@@ -87,6 +88,7 @@
 					<% if curso.id == 2 %>
 						<div class="col-md-4 col-sm-6 col-xs-12 product">
 							<div class="thumbnail" style="background-image: url('/assets/products/<%= curso.image_file_name %>');">
+							<%= image_tag curso.image %>
 								<div class="product-details text-center">
 									<div class="align-vertical">
 										<h3><%= curso.titulo %></h3>
