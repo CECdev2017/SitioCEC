@@ -5,15 +5,15 @@
 #   gem 'sqlite3'
 #
 default: &default
-  adapter: babar.elephantsql.com
+  adapter: postgresql
   pool: 5
   timeout: 5000
 
 development:
-  adapter: babar.elephantsql.com
-  database: blykudvq
-  user: blykudvq
-  password: FEulrDo6Y8wlT_Hpy54LMZ2Cmt3p7NKo
+  adapter: postgresql
+  database: dfae94hrlvumcq
+  user: ztadzelkpjfenq
+  password: 14c8ad333c0305038d50e65e1b7e428cc63486fdde78a3db0ec81abddfd67af8
   pool: 5
   timeout: 5000
 
@@ -22,17 +22,17 @@ development:
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test:
-  adapter: babar.elephantsql.com
-  database: blykudvq
-  user: blykudvq
-  password: FEulrDo6Y8wlT_Hpy54LMZ2Cmt3p7NKo
+  adapter: postgresql
+  database: dfae94hrlvumcq
+  user: ztadzelkpjfenq
+  password: 14c8ad333c0305038d50e65e1b7e428cc63486fdde78a3db0ec81abddfd67af8
   pool: 5
   timeout: 5000
 
 production:
-  adapter: babar.elephantsql.com
-  database: blykudvq
-  user: blykudvq
-  password: FEulrDo6Y8wlT_Hpy54LMZ2Cmt3p7NKo 
+  adapter: postgresql
+  database: dfae94hrlvumcq
+  user: ztadzelkpjfenq
+  password: 14c8ad333c0305038d50e65e1b7e428cc63486fdde78a3db0ec81abddfd67af8 
   pool: 5
   timeout: 5000
