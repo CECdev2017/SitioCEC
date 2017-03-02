@@ -49,8 +49,7 @@ gem 'coffee-script-source', '1.8.0'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'pg'
-gem 'rails_12factor'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -67,7 +66,8 @@ group :development do
 end
 
 group :production do
-	
+	gem 'pg'
+	gem 'rails_12factor'
 end	
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
