@@ -37,6 +37,7 @@ gem 'toastr-rails'
 
 gem 'country_select'
 
+gem 'mysql2'
 
 gem 'coffee-script-source', '1.8.0'
 
